@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Question 6 Hide</title>
+</head>
+<body>
+  <p id="load">Text Loading...<br>
+  <img src="programming.gif" alt="Computer man" style="width:80px;height:80px;"></p>
+  <button onclick="Hide()">LOADED</button>
+
+  <style>
+
+    body {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      background-color: beige;
+      gap: 1rem;
+    }
+
+    button {      
+      width: 70px;
+      height: 30px;
+      background-color: rgb(99, 111, 204);
+      border-radius: 5px;      
+    }
+
+    .hide {
+      display: none;
+    }
+  </style>
+
+  <script>
+    const hidden = document.getElementById("load");
+
+    function Hide() {
+    hidden.classList.add("hide");
+
+    }
+  </script>
+  
+  </body>
+</html>
